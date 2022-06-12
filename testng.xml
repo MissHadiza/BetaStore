@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="utils.SuiteListener"/>
+    </listeners>
+    <test name="BETA STORE AUTOMATION">
+        <parameter name="browserName" value="chrome">
+            <classes>
+                <class name="modules.FlightPage">
+                    <methods>
+                        <include name="ClearTripTest"/>
+                    </methods>
+
+                </class>
+            </classes>
+        </parameter>
+    </test>
+</suite>
